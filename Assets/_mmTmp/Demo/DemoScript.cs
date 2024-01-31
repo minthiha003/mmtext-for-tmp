@@ -14,12 +14,11 @@ public class DemoScript : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
+        btnConvert.onClick.AddListener(OnClickConvert);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnClickConvert()
     {
-        
+        tmpText.text = tmpInputField.text.Uni2Zg();
     }
 }
